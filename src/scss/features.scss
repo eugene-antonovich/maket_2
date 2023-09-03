@@ -1,0 +1,35 @@
+.features {
+    margin-top: 115px;
+    margin-bottom: 50px;
+    
+    .features-card-wrap {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+
+        .features-card {
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 15px 85px 15px;
+
+            .features-card-title {
+                margin-top: 30px;
+                color: #2D3033;
+                font-size: 24px;
+                font-weight: 900;
+                text-transform: uppercase;
+            }
+
+            .features-card-description{
+                margin-top: 20px;
+                color: #6C7279;
+                text-align: center;
+                font-size: 18px;
+                font-weight: 400;
+            }   
+        }
+    }
+}

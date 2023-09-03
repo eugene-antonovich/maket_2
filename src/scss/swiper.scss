@@ -1,0 +1,50 @@
+.swiper {
+    .swiper-wrapper {
+
+        .swiper-slide {
+            display: flex;
+            background-color: #5C3249;
+            align-items: center;
+
+            .swiper-slide-img {
+                width: 50%;
+                height: 490px;
+
+                & img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .swiper-slide-description {
+                color: #fff;
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                & p {
+                    width: 471px;
+                    font-family: Cardo;
+                    font-size: 36px;
+                    font-style: italic;
+                    font-weight: 400;
+                    text-transform: capitalize;
+                }
+
+                .swiper-slide-subtitle {
+                    width: 471px;
+                    margin-top: 20px;
+                    font-size: 13px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+    }
+
+   .swiper-pagination {
+    margin-top: 40px;
+   } 
+}

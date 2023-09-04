@@ -2,6 +2,10 @@
     padding: 70px 0px;
     background-color: #353C65;
 
+    @media (max-width: 1024px) {
+        padding: 46px 0px;
+    }
+
     .social-card-wrap {
         display: flex;
         justify-content: space-between;
@@ -14,6 +18,11 @@
             flex-direction: column;
             align-items: center;
 
+            @media (max-width: 1024px) {
+                width: 314px;
+                margin: 0px 15px;
+            }
+
             .social-title {
                 color: #FFF;
                 text-align: center;
@@ -21,6 +30,11 @@
                 font-weight: 700;
                 text-transform: uppercase;
                 margin-bottom: 30px;
+
+                @media (max-width: 1024px) {
+                    font-size: 14px;
+                    margin-bottom: 17px;
+                }
             }
 
             .social-address-link {
@@ -29,11 +43,20 @@
                 font-size: 18px;
                 font-weight: 400;
                 text-transform: capitalize;
+
+                @media (max-width: 1024px) {
+                    font-size: 14px;
+                }
             }
 
             .social-icon-wrap {
                 width: 171px;
                 margin-top: 20px;
+
+                @media (max-width: 1024px) {
+                    width: 145px;
+                    margin-top: 16px;
+                }
 
                 .social-list {
                     display: flex;
@@ -43,6 +66,11 @@
                         width: 39px;
                         height: 39px;
                         border: 1px solid #C6CBCD;
+
+                        @media (max-width: 1024px) {
+                            width: 33px;
+                            height: 33px;
+                        }
 
                         & a {
                             display: flex;
@@ -56,6 +84,10 @@
                             .fa-linkedin {
                                 font-size: 18px;
                                 color: #C6CBCD;
+
+                                @media (max-width: 1024px) {
+                                    font-size: 16px;
+                                }
                             }
 
                         }
@@ -69,6 +101,10 @@
                 font-size: 18px;
                 font-weight: 400;
                 text-transform: capitalize;
+
+                @media (max-width: 1024px) {
+                    font-size: 14px;
+                }
             }
         }
     }

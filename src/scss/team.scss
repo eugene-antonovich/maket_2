@@ -8,15 +8,55 @@
         flex-wrap: wrap;
         margin: 0 -15px;
 
+        @media (max-width: 1424px) {
+            flex-wrap: nowrap;
+        }
+
+        @media (max-width: 1024px) {
+            flex-wrap: wrap;
+        }
+
         .team-card {
             display: flex;
             flex-direction: column;
             width: 255px;
             margin: 0 15px 50px 15px;
 
+            @media (max-width: 1105px) {
+                width: 230px;
+            }
+
+            @media (max-width: 1024px) {
+                width: 215px;
+                margin: 0px 12.5px 70px 12.5px;
+            }
+
+
+            @media (max-width: 960px) {
+                width: 300px;
+            }
+
+            
+
             .team-card-img {
                 width: 255px;
                 height: 255px;
+
+                @media (max-width: 1424px) {
+                    width: 230px;
+                    height: 230px;
+                }
+
+                @media (max-width: 1024px) {
+                    width: 215px;
+                    height: 215px;
+                }
+
+
+                @media (max-width: 960px) {
+                    width: 300px;
+                    height: 300px;
+                }
 
                 & img {
                     width: 100%;
@@ -30,6 +70,21 @@
                 font-size: 24px;
                 font-weight: 700;
                 text-transform: capitalize;
+
+                @media (max-width: 1424px) {
+                    font-size: 22px;
+                }
+
+                @media (max-width: 1024px) {
+                    font-size: 18px;
+                    margin-top: 25px;
+                }
+
+
+                @media (max-width: 960px) {
+                    font-size: 26px;
+                    margin-top: 32px;
+                }
             }
 
             .team-card-subtitle {
@@ -38,6 +93,20 @@
                 font-size: 18px;
                 font-weight: 400;
                 text-transform: uppercase;
+
+                @media (max-width: 1424px) {
+                    font-size: 16px;
+                }
+
+                @media (max-width: 1024px) {
+                    font-size: 14px;
+                }
+
+
+                @media (max-width: 960px) {
+                    font-size: 20px;
+                    margin-top: 10px;
+                }
             }
 
             .team-card-description {
@@ -45,6 +114,17 @@
                 color: #6C7279;
                 font-size: 18px;
                 font-weight: 400;
+
+                @media (max-width: 1024px) {
+                    font-size: 14px;
+                    margin-top: 22px;
+                }
+
+
+                @media (max-width: 960px) {
+                    font-size: 20px;
+                    margin-top: 25px;
+                }
             }
 
             .team-card-social {
@@ -55,9 +135,29 @@
                     justify-content: space-between;
                     width: 130px;
 
+                    @media (max-width: 1024px) {
+                        width: 106px;
+                    }
+
+
+                    @media (max-width: 960px) {
+                        width: 130px;
+                    }
+
                     .team-list-item {
                         width: 39px;
                         height: 39px;
+
+                        @media (max-width: 1024px) {
+                            width: 32px;
+                            height: 32px;
+                        }
+
+
+                        @media (max-width: 960px) {
+                            width: 39px;
+                            height: 39px;
+                        }
 
                         & a {
                             display: flex;
@@ -72,6 +172,15 @@
                             .fa-linkedin {
                                 font-size: 18px;
                                 color: #C6CBCD;
+
+                                @media (max-width: 1024px) {
+                                    font-size: 16px;
+                                }
+
+
+                                @media (max-width: 960px) {
+                                    font-size: 18px;
+                                }
                             }
                         }
                     }

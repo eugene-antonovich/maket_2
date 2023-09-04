@@ -1,6 +1,10 @@
 .swiper {
     .swiper-wrapper {
         margin-bottom: 30px;
+
+        @media (max-width: 1024px) {
+            margin-bottom: 24px;
+        }
         .swiper-slide {
             display: flex;
             background-color: #5C3249;
@@ -9,6 +13,10 @@
             .swiper-slide-img {
                 width: 50%;
                 height: 490px;
+
+                @media (max-width: 1024px) {
+                    height: 332px;
+                }
 
                 & img {
                     width: 100%;
@@ -30,6 +38,11 @@
                     font-style: italic;
                     font-weight: 400;
                     text-transform: capitalize;
+
+                    @media (max-width: 1024px) {
+                        width: 330px;
+                        font-size: 24px;
+                    }
                 }
 
                 .swiper-slide-subtitle {
@@ -38,6 +51,11 @@
                     font-size: 13px;
                     font-weight: 700;
                     text-transform: uppercase;
+
+                    @media (max-width: 1024px) {
+                        width: 330px;
+                        font-size: 12px;
+                    }
                 }
             }
         }
@@ -52,11 +70,22 @@
             height: 14px;
             background-color: white;
             border: 1.3px solid #5C3249;
+
+            @media (max-width: 1024px) {
+                width: 9px;
+                height: 9px;
+                border: 1px solid #5C3249;
+            }
         }
         &-bullet-active {
             width: 14px;
             height: 14px;
             background-color: #5C3249;
+
+            @media (max-width: 1024px) {
+                width: 9px;
+                height: 9px;
+            }
            } 
         }
     }

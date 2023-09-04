@@ -7,6 +7,10 @@
     background-size: cover;
     position: relative;
 
+    @media (max-width: 1024px) {
+        padding-bottom: 126px;
+    }
+
     &::after {
         content: '';
         position: absolute;
@@ -24,7 +28,7 @@
         align-items: center;
         justify-content: space-between;
         border-bottom: 1px solid #BABBC5;
-        padding-bottom: 35px;
+        padding-bottom: 20px;
 
         .header-logo-left {
             font-size: 30px;
@@ -47,11 +51,18 @@
                     display: flex;
                     justify-content: center;
                     width: 134px;
+                    line-height: 55px;
                     position: relative;
                     color: #FFF;
                     font-size: 13px;
                     font-weight: 700;
                     text-transform: uppercase;
+                    transition: 0.5s;
+
+                    @media (max-width: 1024px) {
+                        width: 112px;
+                        font-size: 12px;
+                    }
 
                     &:hover::after {
                         content: '';
@@ -60,7 +71,7 @@
                         height: 3px;
                         display: block;
                         left: 0;
-                        top: 57px;
+                        top: 72px;
                         background-color: #BABBC5;
                     }
 
@@ -72,11 +83,13 @@
                         background-color: #E71414;
                         display: block;
                         left: 0;
-                        top: 57px;
+                        top: 72px;
+                        transition: 0.5s;
                     }
 
                     &:active {
                         color: #E71414;
+                        transition: 0.5s;
                     }
                 }
             }
@@ -95,6 +108,11 @@
             font-weight: 900;
             text-transform: uppercase;
             margin-top: 130px;
+
+            @media (max-width: 1024px) {
+                font-size: 48px;
+                margin-top: 157px;
+            }
         }
 
         .header-description {
@@ -103,6 +121,11 @@
             font-size: 24px;
             font-weight: 400;
             margin-top: 30px;
+
+            @media (max-width: 1024px) {
+                font-size: 18px;
+                margin-top: 61px;
+            }
         }
 
         .header-btn-link {
@@ -117,14 +140,22 @@
             height: 80px;
             background-color: #FF4343;
             margin-top: 80px;
+            transition: 0.5s;
+
+            @media (max-width: 1024px) {
+                width: 314px;
+                margin-top: 90px;
+            }
 
             &:hover {
                 background-color: #E71414;
+                transition: 0.5s;
             }
 
             &:active {
                 background-color: #FF4343;
                 box-shadow: 4px 4px 30px 0px #FF4343;
+                transition: 0.5s
             }
         }
     }

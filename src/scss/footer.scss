@@ -2,10 +2,18 @@
     background-color: #2C3154;
     padding: 24px 0px;
 
+    @media (max-width: 1024px) {
+        padding: 14px 0px;
+    }
+
     .footer-wrap {
         display: flex;
         width: 370px;
         margin: auto;
+
+        @media (max-width: 1024px) {
+            width: 314px;
+        }
 
         .footer-text {
             color: #808080;
@@ -13,6 +21,10 @@
             font-size: 18px;
             font-weight: 400;
             text-transform: capitalize;
+
+            @media (max-width: 1024px) {
+                font-size: 14px;
+            }
 
             &-white {
                 color: #FFF;

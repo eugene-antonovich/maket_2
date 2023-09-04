@@ -1,6 +1,6 @@
 .swiper {
     .swiper-wrapper {
-
+        margin-bottom: 30px;
         .swiper-slide {
             display: flex;
             background-color: #5C3249;
@@ -44,7 +44,20 @@
 
     }
 
-   .swiper-pagination {
-    margin-top: 40px;
-   } 
-}
+    .swiper-pagination {
+        position: static;
+        
+        &-bullet {
+            width: 14px;
+            height: 14px;
+            background-color: white;
+            border: 1.3px solid #5C3249;
+        }
+        &-bullet-active {
+            width: 14px;
+            height: 14px;
+            background-color: #5C3249;
+           } 
+        }
+    }
+    
